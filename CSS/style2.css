@@ -36,6 +36,7 @@ img{max-width: 100%; border: none;}
 .row{
     float: left;
     width: 100%;
+    margin-bottom: 100px;
 }
 .loadmore{
     background: none;
@@ -245,38 +246,6 @@ img{max-width: 100%; border: none;}
 
 /* PARALLAX
 -------------------------*/
-.parallax{
-    float: left;
-    width: 100%;
-    text-align: center;
-    color: #fff;
-    font-size: 23px;
-    padding: 160px 0;
-    margin: 60px 0;
-    background-image: url(../IMAGENS/bg-paralax.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-.parallax h1{
-    font-size: 38px;
-    margin-bottom: 10px;
-}
-.parallax button{
-    background: #f9014d;
-    font-size: 20px;
-    color: #fff;
-    padding: 10px 15px;
-    margin-top: 20px;
-    cursor: pointer;
-    font-weight: bold;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    transition: all .4s ease-in-out;
-}
-.parallax button:hover{
-    background: #e92863;
-}
 
 /* DESTAQUES
 -------------------------*/
