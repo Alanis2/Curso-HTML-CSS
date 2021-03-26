@@ -280,6 +280,9 @@ img{max-width: 100%; border: none;}
 
 /* DESTAQUES
 -------------------------*/
+.destaques-col{
+    margin-bottom: 20px;
+}
 
 /* TESTEMUNHAS
 -------------------------*/
@@ -379,6 +382,17 @@ img{max-width: 100%; border: none;}
     }
     .destinos-col:first-child{
         width: 100%;
+    }
+
+    /*DESTAQUES*/
+    .destaques-col{
+        width: 49%;
+        margin-right: 2%;
+        margin-bottom: 2%;
+        float: left;
+    }
+    .destaques-col:nth-of-type(2n+0){
+        margin-right: 0;
     }
 }
 
