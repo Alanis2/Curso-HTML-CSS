@@ -6,7 +6,7 @@ body{font-family: 'Open Sans', sans-serif; font-size: inherit;}
 input, select, iframe, button{border: none; font-family: 'Open Sans', sans-serif;}
 h1, h2, h3{margin: 0; padding: 0;}
 ol, ul{list-style: none;}
-a{text-decoration: none; color: inherit;}
+a{text-decoration: none; color: inherit; transition: all .4s ease-in-out;}
 a:hover{color: #f9014d;}
 img{max-width: 100%; border: none;}
 
@@ -165,9 +165,6 @@ img{max-width: 100%; border: none;}
     color: #fff;
     padding: 100px 0;
     background-image: url(../IMAGENS/bg-search.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 }
 .search-box h1{
     font-size: 37px;
@@ -252,11 +249,8 @@ img{max-width: 100%; border: none;}
     color: #fff;
     font-size: 23px;
     padding: 160px 0;
-    margin: 60px 0;
+    margin-top: 60px;
     background-image: url(../IMAGENS/bg-paralax.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 }
 .parallax h1{
     font-size: 38px;
@@ -288,11 +282,7 @@ img{max-width: 100%; border: none;}
 -------------------------*/
 .testemunhas{
     padding: 100px 0;
-    margin: 60px 0;
     background-image: url(../IMAGENS/bg-testemunhas.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 }
 .testemunhas-article{
     float: left;
@@ -332,6 +322,52 @@ img{max-width: 100%; border: none;}
     font-weight: bold;
 }
 
+/* FOOTER
+-------------------------*/
+.footer{
+    background: #181818;
+    float: left;
+    width: 100%;
+    color: #fff;
+    padding: 30px 0;
+}
+.footer-col{
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+}
+.footer-col h1{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.footer-col-links li{
+    padding: 10px;
+}
+.footer-col-links li:not(:last-of-type){
+    border-bottom: 1px solid #fff;
+}
+.footer-col-social li{
+    padding: 10px;
+}
+.footer-col-social li .fab{
+    background: #000;
+    font-size: 20px;
+    margin-right: 5px;
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/*Autorais*/
+.footer-autorais{
+    padding-top: 20px;
+    border-top: 1px solid #fff;
+    color: #ccc;
+}
 
 /* BREACKPOINTS MÁXIMOS
 -------------------------*/
@@ -449,6 +485,36 @@ img{max-width: 100%; border: none;}
     .testemunhas-article:last-of-type{
         margin-right: 0;
     }
+
+    /*FOOTER*/
+    .footer-col{
+        width: 35%;
+    }
+    .footer-col:nth-child(2){
+        width: 33%;
+        margin-left: 5%;
+    }
+    .footer-col:nth-child(3){
+        width: 25%;
+        float: right;
+    }
+    
+}
+
+@media (min-width: 960px){
+    /*FOOTER*/
+    .footer-col{
+        width: 45%;
+    }
+    .footer-col:nth-child(2){
+        width: 30%;
+        margin-left: 5%;
+    }
+    .footer-col:nth-child(3){
+        width: 15%;
+        float: right;
+    }
+    
 }
 
 @media (min-width: 900px){
@@ -466,6 +532,13 @@ img{max-width: 100%; border: none;}
 }
 /* Class Auxiliares
 -------------------------*/
+/*bg-fixed*/
+.bg-fixed{
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
 .text-center{text-align: center;}
 .text-left{text-align: left;}
 .text-right{text-align: right;}
