@@ -286,6 +286,51 @@ img{max-width: 100%; border: none;}
 
 /* TESTEMUNHAS
 -------------------------*/
+.testemunhas{
+    padding: 100px 0;
+    margin: 60px 0;
+    background-image: url(../IMAGENS/bg-testemunhas.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.testemunhas-article{
+    float: left;
+    background: rgba(255,255,255, .7);
+    width: 100%;
+    font-size: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.testemunhas-article h1{
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    padding-left: 12px;
+    border-left: 8px solid #ccc;
+}
+.testemunhas-article .image{
+    overflow: hidden;
+    float: left;
+    margin-right: 10px;
+    width: 83px;
+    height: 83px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.testemunhas-article p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 83px;
+}
+.testemunhas-article .name{
+    color: #a70606;
+    font-weight: bold;
+}
 
 
 /* BREACKPOINTS MÁXIMOS
@@ -392,6 +437,16 @@ img{max-width: 100%; border: none;}
         float: left;
     }
     .destaques-col:nth-of-type(2n+0){
+        margin-right: 0;
+    }
+
+    /*TESTEMUNHAS*/
+    .testemunhas-article{
+        width: calc((100% - 8%) / 3) ;
+        margin-right: 4%;
+        margin-bottom: 4%;
+    }
+    .testemunhas-article:last-of-type{
         margin-right: 0;
     }
 }
